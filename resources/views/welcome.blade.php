@@ -24,7 +24,7 @@
             <a href="#">Switch language (RUS|ENG)</a>
         </div>
 
-        <div class="main">
+        <div class="main" id = "main-div">
             <div id="main-text">
                 This is my life now
             </div>
@@ -41,7 +41,7 @@
             <a href="#">Back to top</a>
             <span>Made by Michael Nosenko</span>
         </div>
-
+    <script async src="./resources/js/main.js"></script>
     </body>
 </html>
 
