@@ -1,91 +1,105 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    min-height: 100vh;
-    font-family: "Bellota Text", cursive;
-    margin: 0;
-    padding: 0 0 0 0;
-    z-index: 0;
+  min-height: 100vh;
+  font-family: "Bellota Text", cursive;
+  margin: 0;
+  padding: 0 0 0 0;
+  z-index: 0;
 }
 
 div.header {
-    padding: 60px;
-    text-align: center;
-    background: #1abc9c;
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
 }
 
 div.navbar {
-    display: flex;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    flex-flow: row wrap;
-    background: #1c1c1c;
-    z-index: 1;
+  display: flex;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  flex-flow: row wrap;
+  background: #1c1c1c;
+  z-index: 10;
 }
+
 div.navbar a {
-    color: white;
-    padding: 14px 20px;
-    text-decoration: none;
-    text-align: center;
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
 }
+
 div.navbar a:hover {
-    background-color: #ddd;
-    color: black;
+  background-color: #ddd;
+  color: black;
 }
 
 div.main {
-    display: flex;
-    flex-flow: column wrap;
-    background-image: url("../../public/images/bg-main.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    width: 100%;
-    height: 1080px;
-    opacity: 0.8;
-    z-index: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  width: 100%;
+  height: 1080px;
+  z-index: 0;
+  align-content: center;
 }
+
 div.main div#main-text {
-    background: rgba(0, 0, 0, 0);
-    color: white;
-    align-self: center;
-    margin: auto;
+  background: rgba(0, 0, 0, 0);
+  color: white;
+  align-self: center;
+  margin: auto;
+}
+
+div.main div#main-bg {
+  background-image: url("../../public/images/bg-main.jpg");
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+  z-index: 0;
+  position: fixed;
 }
 
 div.footer {
-    display: flex;
-    position: sticky;
-    position: -webkit-sticky;
-    bottom: 0;
-    background: #1c1c1c;
-    flex-flow: row wrap;
-    height: 100%;
-    z-index: 1;
-    overflow-y: auto;
+  display: flex;
+  position: sticky;
+  position: -webkit-sticky;
+  bottom: 0;
+  background: #1c1c1c;
+  flex-flow: row wrap;
+  height: 100%;
+  z-index: 10;
+  overflow-y: auto;
 }
+
 div.footer span {
-    color: white;
-    padding: 0 20px 0 20px;
-    margin: 0 10px 0 10px;
-    text-align: center;
-    align-self: center;
-    height: 100%;
-    align-items: center;
-    display: flex;
+  color: white;
+  padding: 0 20px 0 20px;
+  margin: 0 10px 0 10px;
+  text-align: center;
+  align-self: center;
+  height: 100%;
+  align-items: center;
+  display: flex;
 }
+
 div.footer a {
-    color: white;
-    padding: 14px 20px;
-    text-decoration: none;
-    text-align: center;
-    align-self: center;
-    margin-right: auto;
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  align-self: center;
+  margin-right: auto;
 }
+
 div.footer a:hover {
-    background-color: #ddd;
-    color: black;
+  background-color: #ddd;
+  color: black;
 }
 

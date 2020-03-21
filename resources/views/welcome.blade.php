@@ -28,6 +28,7 @@
             <div id="main-text">
                 This is my life now
             </div>
+            <div id="main-bg"></div>
         </div>
 
         <div class="footer">
@@ -41,7 +42,7 @@
             <a href="#">Back to top</a>
             <span>Made by Michael Nosenko</span>
         </div>
-    <script async src="./resources/js/main.js"></script>
+    <script type="text/javascript" src = "{{ URL::asset('js/main.js') }}"></script>
     </body>
 </html>
 

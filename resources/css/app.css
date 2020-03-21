@@ -23,7 +23,7 @@ div.navbar {
   top: 0;
   flex-flow: row wrap;
   background: #1c1c1c;
-  z-index: 1;
+  z-index: 10;
 }
 
 div.navbar a {
@@ -40,15 +40,14 @@ div.navbar a:hover {
 
 div.main {
   display: flex;
-  flex-flow: column wrap;
-  background-image: url("../../public/images/bg-main.jpg");
+  flex-flow: row nowrap;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;
   width: 100%;
   height: 1080px;
-  opacity: 0.8;
   z-index: 0;
+  align-content: center;
 }
 
 div.main div#main-text {
@@ -56,6 +55,15 @@ div.main div#main-text {
   color: white;
   align-self: center;
   margin: auto;
+}
+
+div.main div#main-bg {
+  background-image: url("../../public/images/bg-main.jpg");
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+  z-index: 0;
+  position: fixed;
 }
 
 div.footer {
@@ -66,7 +74,7 @@ div.footer {
   background: #1c1c1c;
   flex-flow: row wrap;
   height: 100%;
-  z-index: 1;
+  z-index: 10;
   overflow-y: auto;
 }
 
